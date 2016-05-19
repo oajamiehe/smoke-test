@@ -1,0 +1,210 @@
+en:
+  number:
+    human:
+      decimal_units:
+        units:
+          unit: ''
+          billion: مليار
+          million: مليون
+          quadrillion: الكدريليون رقم
+          thousand: ألف
+          trillion: تريليون
+        format: '%n %u'
+      format:
+        delimiter: ''
+        precision: '3'
+        significant: صحيح
+        strip_insignificant_zeros: صحيح
+      storage_units:
+        format: '%n %u'
+        units:
+          byte:
+            one: بايت
+            other: بايت
+          gb: جيجابايت
+          kb: كيلو بايت
+          mb: Mb
+          tb: تيرابايت
+    percentage:
+      format:
+        delimiter: ''
+        format: '%n%'
+    precision:
+      format:
+        delimiter: ''
+    currency:
+      format:
+        delimiter: ','
+        format: '%u%n'
+        precision: '2'
+        separator: .
+        significant: خاطئة
+        strip_insignificant_zeros: خاطئة
+        unit: $
+    format:
+      delimiter: ','
+      precision: '3'
+      separator: .
+      significant: خاطئة
+      strip_insignificant_zeros: خاطئة
+  activerecord:
+    errors:
+      messages:
+        record_invalid: '%{errors} فشل التحقق من الصحة:'
+        restrict_dependent_destroy:
+          has_one: '%{record} لا يمكن حذف سجل لأن تعتمد موجود'
+          has_many: '%{record} لا يمكن حذف السجل لأن تعتمد الوجود'
+  date:
+    abbr_day_names:
+    - أحد
+    - اثنين
+    - ثلاثاء
+    - اربعاء
+    - خميس
+    - جمعة
+    - سبت
+    abbr_month_names:
+    - لا شيء
+    - يناير
+    - فبراير
+    - مارس
+    - ابريل
+    - مايو
+    - يونيو
+    - يوليو
+    - اغسطس
+    - سبتمبر
+    - اكتوبر
+    - نوفمبر
+    - ديسمبر
+    day_names:
+    - الأحد
+    - الإثنين
+    - الثلاثاء
+    - الأربعاء
+    - الخميس
+    - الجمعة
+    - يوم السبت
+    formats:
+      default: '%Y-%m-%d'
+      long: '%B %d, %Y'
+      short: '%b %d'
+    month_names:
+    - لا شيء
+    - كانون الثاني
+    - فبراير
+    - مارس
+    - أبريل
+    - مايو
+    - يونيو
+    - يوليو
+    - أغسطس
+    - سبتمبر
+    - شهر اكتوبر
+    - تشرين الثاني
+    - ديسمبر
+    order:
+    - :عام
+    - /شهرياً
+    - يوم
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: حوالي 1 ساعة
+        other: '%{count} حول ساعات'
+      about_x_months:
+        one: حول 1 شهر
+        other: '%{count} حول أشهر'
+      about_x_years:
+        one: حول 1 سنة
+        other: '%{count} حول سنوات'
+      almost_x_years:
+        one: تقريبا 1 سنة
+        other: '%{count} عاما تقريبا'
+      half_a_minute: نصف دقيقة
+      less_than_x_minutes:
+        one: أقل من دقيقة
+        other: '%{count} أقل من دقيقة'
+      less_than_x_seconds:
+        one: أقل من دقيقة
+        other: '%{count} أقل من ثانية'
+      over_x_years:
+        one: أكثر من 1 سنة
+        other: '%{count} على مدى سنوات'
+      x_days:
+        one: 1 يوم
+        other: '%{count} أيام'
+      x_minutes:
+        one: 1 دقيقة
+        other: '%{count} دقائق'
+      x_months:
+        one: 1 شهر
+        other: '%{count} أشهر'
+      x_seconds:
+        one: 1 ثانية
+        other: '%{count} ثانية'
+    prompts:
+      day: يوم
+      hour: ساعة
+      minute: دقيقة
+      month: /شهرياً
+      second: ثانية
+      year: :عام
+  errors:
+    format: '%{attribute} %{message}'
+    messages:
+      accepted: يجب أن تكون مقبولة
+      blank: لا يمكن أن يكون فارغا
+      present: يجب أن تكون فارغة
+      confirmation: '%{attribute} لا يطابق'
+      empty: لا يمكن أن تكون فارغة
+      equal_to: '%{count} يجب أن يكون مساويا ل'
+      even: يجب أن يكون حتى
+      exclusion: محجوز
+      greater_than: '%{count} يجب أن تكون أكبر من'
+      greater_than_or_equal_to: '%{count} يجب أن تكون أكبر من أو يساوي'
+      inclusion: لا يتم تضمينها في قائمة
+      invalid: غير صالح
+      less_than: '%{count} يجب أن يكون أقل من'
+      less_than_or_equal_to: '%{count} يجب أن يكون أقل من أو يساوي'
+      model_invalid: '%{errors} فشل التحقق من الصحة:'
+      not_a_number: ليس عددا
+      not_an_integer: يجب أن يكون صحيحا
+      odd: يجب أن تكون غريبة
+      required: يجب أن يكون موجودا
+      taken: لقد اتخذت بالفعل
+      too_long:
+        one: طويل جدا (الحد الأقصى هو الحرف 1)
+        other: '%{count} طويل جدا (الحد الأقصى هو الحرفnull'
+      too_short:
+        one: طويل جدا (الحد الأقصى هو الحرف 1
+        other: '%{count} قصيرة جدا (الحد الأدنى هو حرف)'
+      wrong_length:
+        one: هو طول خطأ (يجب أن يكون الحرف 1)
+        other: '%{count} هو طول خاطئ (يجب أن يكون حرفا)'
+      other_than: '%{count} يجب أن تكون أكبر من'
+    template:
+      body: 'كانت هناك مشاكل مع الحقول التالية:'
+      header:
+        one: '%{model} يحظر 1 خطأ هذا من يخلصون'
+        other: '%{count} أخطاء %{model} منعت هذا من يخلصون'
+  helpers:
+    select:
+      prompt: يرجى اختيار " "
+    submit:
+      create: '%{model} إنشاء'
+      submit: '%{model} نسخ احتياطي سريع'
+      update: '%{model} تحديث'
+  support:
+    array:
+      last_word_connector: و
+      two_words_connector: و
+      words_connector: ','
+  time:
+    am: صباحا
+    formats:
+      default: '%a, %d %b %Y %H:%M:%S %z'
+      long: '%B %d, %Y %H:%M'
+      short: '%d %b %H:%M'
+    pm: 'PMnull :'
+ther: '%{count} ق�
