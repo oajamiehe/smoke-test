@@ -1,13 +1,23 @@
-<?xml version="1.0"?>
-<current>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   package="com.example.sairamkrishna.myapplication" >
+   <uses-permission android:name="android.permission.INTERNET"/>
+   <application
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme" >
+      
+      <activity
+         android:name=".MainActivity"
+         android:label="@string/app_name" >
+         
+         <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+      
+      </activity>
    
-   <city id="2643743" name="London">
-      <coord lon="-0.12574" lat="51.50853"/>
-      <country>GB</country>
-      <sun rise="2013-10-08T06:13:56" set="2013-10-08T17:21:45"/>
-   </city>
-   
-   <temperature value="289.54" min="289.15" max="290.15" unit="kelvin"/>
-   <humidity value="77" unit="%"/>
-   <pressure value="1025" unit="hPa"/>
-</current>
+   </application>
+</manifest>
